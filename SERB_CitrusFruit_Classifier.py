@@ -182,7 +182,10 @@ for features,labels in testing:
     X_test.append(features)
     y_test.append(labels)
 
-
+    
+    
+    
+random.shuffle(testing)
 # In[44]:
 
 
@@ -190,8 +193,6 @@ X_test =np.array(X_test)
 y_test=np.array(y_test)
 
 X_test=X_test/255
-y_test=y_test/255
-
 
 # In[45]:
 
